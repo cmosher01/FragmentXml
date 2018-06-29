@@ -51,7 +51,7 @@ public class Fragment {
         return this.out.toString();
     }
 
-    public static class Attribute {
+    public static class Attribute extends Fragment {
         private final Fragment outer;
 
         private Attribute(final Fragment fragment) {
