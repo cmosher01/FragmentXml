@@ -35,6 +35,11 @@ public class Fragment {
         return this;
     }
 
+    public Fragment frag(final String frag) {
+        this.out.append(frag);
+        return this;
+    }
+
     public Fragment end() {
         if (!this.within.isEmpty()) {
             final String elem = this.within.pop();
@@ -75,6 +80,11 @@ public class Fragment {
         public Fragment text(final String text) {
             this.outer.out.append(">");
             return this.outer.text(text);
+        }
+
+        public Fragment frag(final String frag) {
+            this.outer.out.append(">");
+            return this.outer.frag(frag);
         }
 
         public Fragment end() {
