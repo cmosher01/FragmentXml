@@ -1,0 +1,23 @@
+{
+    "package": {
+        "name": "fragment-xml",
+        "repo": "maven",
+        "subject": "cmosher01",
+        "vcs_url": "https://github.com/cmosher01/FragmentXml",
+        "licenses": [
+            "GPL-3.0"
+        ]
+    },
+    "version": {
+        "name": "1.0.0"
+    },
+    "files": [ {
+            "includePattern": "build/libs/(.*)",
+            "uploadPattern": "nu/mine/mosher/xml/fragment-xml/1.0.0/$1"
+        }, {
+            "includePattern": "build/publications/maven/pom-default.xml",
+            "uploadPattern": "nu/mine/mosher/xml/fragment-xml/1.0.0/fragment-xml-1.0.0.pom"
+        }
+    ],
+    "publish": true
+}

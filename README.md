@@ -10,9 +10,7 @@ For `gradle` builds:
 ```groovy
 repositories {
     mavenCentral()
-    maven {
-        url 'https://mosher.mine.nu/nexus/repository/maven-public/'
-    }
+    jcenter()
 }
 
 dependencies {
